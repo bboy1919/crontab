@@ -1,0 +1,10 @@
+{
+    "api接口服务端口": "提供任务增删改查服务",
+    "apiPort": 8070,
+
+    "api接口读超时": "单位毫秒",
+    "apiReadTimeout": 5000,
+
+    "api接口写超时": "单位毫秒",
+    "apiWriteTimeout": 5000
+}
