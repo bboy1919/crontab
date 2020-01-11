@@ -119,6 +119,11 @@ func ExtractKillerName(jobKey string) string {
 	return strings.TrimPrefix(jobKey, JOB_KILLER_DIR)
 }
 
+//从etcd的key中提取ip
+func ExtractWorkIP(regKey string) string {
+	return strings.TrimPrefix(regKey, JOB_WORKER_DIR)
+}
+
 func BuildJobEvent(eventType int, job *Job) (jobEvent *JobEvent) {
 	return &JobEvent{
 		EventType: eventType,

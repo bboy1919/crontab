@@ -35,6 +35,11 @@ func main() {
 		goto ERR
 	}
 
+	//服务注册
+	if err = worker.InitRegister(); err != nil {
+		goto ERR
+	}
+
 	//初始化线程数量
 	initEnv()
 
