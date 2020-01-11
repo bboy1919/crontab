@@ -9,7 +9,7 @@ import (
 )
 
 type LogMgr struct {
-	client *mongo.Client
+	client *mongo.Client //monggo客户端
 	logCollection *mongo.Collection
 }
 
